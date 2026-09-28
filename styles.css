@@ -9,6 +9,7 @@
   --sombra: 0 6px 18px rgba(74, 55, 40, 0.1);
   --radio: 12px;
   --header-h: 56px;
+  --banner-h: 34px;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -23,14 +24,34 @@ img { max-width: 100%; display: block; }
 a { text-decoration: none; color: inherit; }
 .container { width: min(1000px, 92%); margin-inline: auto; }
 
-/* Evita que el header fijo tape las secciones */
+.example-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--banner-h);
+  z-index: 110;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--marron);
+  color: var(--crema);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-align: center;
+  padding: 0 12px;
+}
+
 section[id] {
-  scroll-margin-top: calc(var(--header-h) + 16px);
+  scroll-margin-top: calc(var(--header-h) + var(--banner-h) + 16px);
 }
 
 .header {
   position: fixed;
-  top: 0; left: 0; width: 100%;
+  top: var(--banner-h);
+  left: 0;
+  width: 100%;
   height: var(--header-h);
   background: rgba(245, 232, 211, 0.94);
   backdrop-filter: blur(8px);
@@ -66,7 +87,7 @@ section[id] {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: calc(var(--header-h) + 24px) 16px 32px;
+  padding: calc(var(--header-h) + var(--banner-h) + 24px) 16px 32px;
   position: relative;
   overflow: hidden;
   background-color: #e8d5b7;
@@ -120,7 +141,7 @@ section[id] {
 .tagline {
   font-size: 0.85rem;
   color: var(--marron-suave);
-  max-width: 320px;
+  max-width: 360px;
   margin: 0 auto 1.2rem;
   opacity: 0.9;
 }
@@ -391,4 +412,5 @@ section[id] {
   .cake-center { width: 110px; max-height: 120px; }
   .deco { display: none; }
   .d1, .d2, .d7, .d8 { display: block; width: 22px !important; }
+  .example-banner { font-size: 0.72rem; }
 }
