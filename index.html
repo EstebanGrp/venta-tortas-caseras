@@ -3,153 +3,181 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tortas — Pastelería artesanal</title>
-  <meta name="description" content="Tortas hechas a mano, horneadas el mismo día del pedido.">
+  <title>Tortas · Hechas a Mano</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <header class="header">
-    <div class="wrap nav">
-      <a class="logo" href="#inicio">Tortas</a>
-      <nav class="links" id="navLinks">
-        <a href="#carta">Carta</a>
-        <a href="#atelier">Atelier</a>
-        <a href="#encargos">Encargos</a>
-        <a class="btn btn-solid" href="https://wa.me/56912345678?text=Hola%2C%20quiero%20encargar%20una%20torta%20artesanal." target="_blank" rel="noopener">Encargar</a>
+    <div class="container nav">
+      <a href="#inicio" class="logo">Tortas</a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#tortas">Tortas</a></li>
+          <li><a href="#pedidos">Pedidos</a></li>
+        </ul>
       </nav>
-      <button class="menu" id="menuBtn" aria-label="Menú">☰</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Menú">☰</button>
     </div>
   </header>
 
   <section id="inicio" class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <p class="kicker">Pastelería artesanal</p>
-        <h1>Tortas <em>hechas a mano</em></h1>
-        <p class="lead">Recetas de casa, ingredientes reales y horneado el mismo día del encargo.</p>
-        <div class="actions">
-          <a class="btn btn-solid" href="#carta">Ver la carta</a>
-          <a class="btn btn-ghost" href="https://wa.me/56912345678?text=Hola%2C%20quiero%20encargar%20una%20torta%20artesanal." target="_blank" rel="noopener">Pedir por WhatsApp</a>
-        </div>
-      </div>
-      <div class="hero-frame">
-        <img src="cheeze%20cake.png" alt="Cheesecake de frutos rojos">
-      </div>
+    <img src="galleta%20estrella.png" alt="" class="deco d1">
+    <img src="galleta%20estre%C3%B1%C3%B1a%202.png" alt="" class="deco d2">
+    <img src="blueberry.png" alt="" class="deco d3">
+    <img src="cereza.png" alt="" class="deco d4">
+    <img src="frambueza.png" alt="" class="deco d5">
+    <img src="freza.png" alt="" class="deco d6">
+    <img src="hoja%20de%20menta.png" alt="" class="deco d7">
+    <img src="ramita%20de%20menta.png" alt="" class="deco d8">
+    <img src="virutas%20de%20chocolate.png" alt="" class="deco d9">
+    <img src="migajas%20de%20bizcocho.png" alt="" class="deco d10">
+
+    <div class="hero-content">
+      <h1 class="title">TORTAS</h1>
+      <p class="subtitle">HECHAS A MANO</p>
+      <p class="tagline">Recetas de la abuela · Ingredientes reales · Mucho cariño</p>
+      <a href="#tortas" class="btn">Ver las tortas</a>
+    </div>
+
+    <div class="hero-cakes">
+      <img src="cheeze%20cake.png" alt="Cheesecake" class="cake-img cake-left">
+      <img src="rodaja%20de%20torta%20selvanegra.png" alt="Selva Negra" class="cake-img cake-center">
+      <img src="torta%203leches.png" alt="Tres Leches" class="cake-img cake-right">
     </div>
   </section>
 
-  <section class="facts">
-    <div class="wrap facts-grid">
-      <article>
-        <h3>Ingredientes reales</h3>
-        <p>Sin conservantes. Fruta, cacao y lácteos de calidad.</p>
-      </article>
-      <article>
-        <h3>Horneado del día</h3>
-        <p>Cada torta sale del horno el mismo día del retiro.</p>
-      </article>
-      <article>
-        <h3>Encargos con aviso</h3>
-        <p>Pedidos con 48 horas de anticipación.</p>
-      </article>
-    </div>
-  </section>
-
-  <section id="carta" class="section">
-    <div class="wrap">
-      <header class="center">
-        <p class="kicker">La carta</p>
-        <h2>Cinco clásicos, un encargo a tu medida</h2>
-      </header>
-      <div class="cards">
-        <article class="card">
-          <div class="thumb"><img src="rodaja%20de%20torta%20selvanegra.png" alt="Selva Negra"></div>
-          <div class="body">
-            <div class="row"><h3>Selva Negra</h3><span>$18.000</span></div>
-            <p>Bizcocho de cacao, crema, cerezas y virutas de chocolate.</p>
-            <a class="btn btn-solid sm" href="https://wa.me/56912345678?text=Hola%2C%20quiero%20encargar%20Selva%20Negra." target="_blank" rel="noopener">Encargar</a>
-          </div>
-        </article>
-        <article class="card">
-          <div class="thumb"><img src="torta%203leches.png" alt="Tres Leches"></div>
-          <div class="body">
-            <div class="row"><h3>Tres Leches</h3><span>$17.000</span></div>
-            <p>Esponjosa, jugosita y con un toque de canela.</p>
-            <a class="btn btn-solid sm" href="https://wa.me/56912345678?text=Hola%2C%20quiero%20encargar%20Tres%20Leches." target="_blank" rel="noopener">Encargar</a>
-          </div>
-        </article>
-        <article class="card">
-          <div class="thumb"><img src="cheeze%20cake.png" alt="Cheesecake"></div>
-          <div class="body">
-            <div class="row"><h3>Cheesecake</h3><span>$20.000</span></div>
-            <p>Base de galleta, queso crema y salsa de frutos rojos.</p>
-            <a class="btn btn-solid sm" href="https://wa.me/56912345678?text=Hola%2C%20quiero%20encargar%20Cheesecake." target="_blank" rel="noopener">Encargar</a>
-          </div>
-        </article>
-        <article class="card">
-          <div class="thumb"><img src="chantilli.png" alt="Chantilly"></div>
-          <div class="body">
-            <div class="row"><h3>Chantilly</h3><span>$16.500</span></div>
-            <p>Crema suave, frutas de temporada y bizcocho liviano.</p>
-            <a class="btn btn-solid sm" href="https://wa.me/56912345678?text=Hola%2C%20quiero%20encargar%20Chantilly." target="_blank" rel="noopener">Encargar</a>
-          </div>
-        </article>
-        <article class="card">
-          <div class="thumb"><img src="freza%20partida.png" alt="Encargo personalizado"></div>
-          <div class="body">
-            <div class="row"><h3>Personalizada</h3><span>Desde $22.000</span></div>
-            <p>Cumpleaños, matrimonios o temáticas. Lo diseñamos contigo.</p>
-            <a class="btn btn-solid sm" href="https://wa.me/56912345678?text=Hola%2C%20quiero%20un%20encargo%20personalizado." target="_blank" rel="noopener">Consultar</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="atelier" class="atelier">
-    <div class="wrap atelier-grid">
-      <div class="atelier-frame">
-        <img src="rodaja%20de%20torta%20selvanegra.png" alt="Selva Negra">
-      </div>
-      <div>
-        <p class="kicker light">El atelier</p>
-        <h2>Hechas en casa, para tu mesa</h2>
-        <p>Somos un taller familiar. Cada torta se prepara por encargo, con recetas de la casa y el tiempo que merecen.</p>
-        <ul>
-          <li>Producción limitada, por pedido</li>
-          <li>Porciones de 8 a 16 personas</li>
-          <li>Retiro o entrega coordinada</li>
+  <section id="nosotros" class="section about">
+    <div class="container">
+      <div class="about-card">
+        <h2>Hechas en casa,<br>para ti</h2>
+        <p>Somos un emprendimiento familiar que prepara tortas artesanales con recetas de la abuela. Usamos solo ingredientes naturales, sin conservantes y con el sabor de siempre.</p>
+        <p>Cada torta se hornea el mismo día del pedido para que llegue fresquita a tu mesa.</p>
+        <ul class="features">
+          <li>100% caseras</li>
+          <li>Sin conservantes</li>
+          <li>Hechas con cariño</li>
+          <li>Entrega a domicilio</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <section id="encargos" class="section">
-    <div class="wrap">
-      <p class="kicker">Encargos</p>
-      <h2>Tres pasos, sin complicaciones</h2>
-      <ol class="steps">
-        <li><span>01</span><h3>Elige</h3><p>Revisa la carta o cuéntanos sabor, tamaño y fecha.</p></li>
-        <li><span>02</span><h3>Confirma</h3><p>Te respondemos por WhatsApp con disponibilidad y total.</p></li>
-        <li><span>03</span><h3>Recibe</h3><p>La torta sale fresca el día acordado, lista para la mesa.</p></li>
-      </ol>
-      <div class="cta">
-        <h3>Listos para tu próximo encargo</h3>
-        <p>Reemplaza el número de WhatsApp cuando tengas el real.</p>
-        <a class="btn btn-solid" href="https://wa.me/56912345678?text=Hola%2C%20quiero%20encargar%20una%20torta%20artesanal." target="_blank" rel="noopener">Abrir WhatsApp</a>
+  <section id="tortas" class="section catalog">
+    <div class="container">
+      <h2 class="section-title">Nuestras Tortas</h2>
+      <p class="section-subtitle">Elige tu favorita o pide una personalizada</p>
+
+      <div class="products">
+        <article class="card">
+          <div class="card-img">
+            <img src="rodaja%20de%20torta%20selvanegra.png" alt="Selva Negra">
+          </div>
+          <div class="card-body">
+            <h3>Selva Negra</h3>
+            <p>Bizcocho de chocolate, crema chantilly, cerezas y virutas.</p>
+            <div class="price">$18.000</div>
+            <a href="#pedidos" class="btn btn-sm">Pedir</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img">
+            <img src="torta%203leches.png" alt="Tres Leches">
+          </div>
+          <div class="card-body">
+            <h3>Tres Leches</h3>
+            <p>Clásica y jugosa, con un toque de canela y crema suave.</p>
+            <div class="price">$17.000</div>
+            <a href="#pedidos" class="btn btn-sm">Pedir</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img">
+            <img src="cheeze%20cake.png" alt="Cheesecake">
+          </div>
+          <div class="card-body">
+            <h3>Cheesecake</h3>
+            <p>Base de galleta, crema de queso y salsa de berries casera.</p>
+            <div class="price">$20.000</div>
+            <a href="#pedidos" class="btn btn-sm">Pedir</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img">
+            <img src="chantilli.png" alt="Chantilly">
+          </div>
+          <div class="card-body">
+            <h3>Torta de Chantilly</h3>
+            <p>Suave, esponjosa y decorada con crema y frutas.</p>
+            <div class="price">$16.500</div>
+            <a href="#pedidos" class="btn btn-sm">Pedir</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img">
+            <img src="freza%20partida.png" alt="Personalizada">
+          </div>
+          <div class="card-body">
+            <h3>Personalizada</h3>
+            <p>Cuéntanos tu idea y la hacemos realidad.</p>
+            <div class="price">Desde $22.000</div>
+            <a href="#pedidos" class="btn btn-sm">Consultar</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="pedidos" class="section orders">
+    <div class="container">
+      <h2 class="section-title">¿Cómo pedir?</h2>
+      <p class="section-subtitle">Simple, rápido y con cariño</p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Elige tu torta</h3>
+          <p>Mira el catálogo o cuéntanos lo que necesitas.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Escríbenos</h3>
+          <p>Por WhatsApp. Te respondemos al toque.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Recibe</h3>
+          <p>Te la entregamos fresquita en la fecha que elijas.</p>
+        </div>
+      </div>
+
+      <div class="contact-box">
+        <h3>Haz tu pedido</h3>
+        <p>Estamos listos para endulzar tu día</p>
+        <div class="contact-btns">
+          <a href="https://wa.me/56912345678?text=Hola!%20Quiero%20pedir%20una%20torta%20hecha%20a%20mano" class="btn whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <p class="note">* Reemplaza el número por el real</p>
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="wrap foot">
-      <strong>Tortas</strong>
-      <p>Pastelería artesanal · Proyecto de ejemplo</p>
+    <div class="container">
+      <p>Tortas · Hechas a mano</p>
+      <p class="small">Ejemplo de página web para proyecto escolar</p>
     </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
