@@ -1,14 +1,10 @@
-// Menú móvil
-const menuBtn = document.getElementById('menuBtn');
-const navLinks = document.querySelector('.nav-links');
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
 
-menuBtn.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+menuBtn?.addEventListener("click", () => {
+  navLinks?.classList.toggle("open");
 });
 
-// Cerrar menú al hacer clic en un enlace
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('active');
-  });
+navLinks?.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => navLinks.classList.remove("open"));
 });
